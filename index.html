@@ -3,35 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crachá</title>
-    <link rel="stylesheet" type="text/css" href="style.css?version=2">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="cracha">
-        <img src="imagem.jpg" alt="Foto" class="foto">
-        
-        <div class="dados">
-            <div>
-                <h2 class="nome">Nome:</h2>
-                <p>Taylor Alison Swift</p>
-            </div>
-            <div>
-                <h2 class="idade">Idade:</h2>
-                <p>34 anos</p>
-            </div>
-            <div>
-                <h2 class="profissão">Profissão:</h2>
-                <p>Cantora</p>
-            </div>
-            <div>
-                <h2 class="email">Email:</h2>
-                <p>taylorswift13@icloud.com</p>
-            </div>
-            <div>
-                <h2 class="telefone">Telefone:</h2>
-                <p>(555) 133-1313</p>
-            </div>
+    <div class="calculator">
+        <h2>Calculadora IMC - Desafio 01</h2>
+        <div>
+            <label for="weight">Peso (kg):</label>
+            <input type="number" id="weight">
         </div>
+        <div>
+            <label for="height">Altura (m):</label>
+            <input type="number" id="height">
+        </div>
+        <button onclick="calculateIMC()">Calcular</button>
+        <div id="result"></div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
